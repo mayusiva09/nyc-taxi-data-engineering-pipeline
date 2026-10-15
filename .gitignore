@@ -1,0 +1,64 @@
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Credentials and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Downloaded and generated datasets
+data/raw/*
+data/processed/*
+data/rejected/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/rejected/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.duckdb.wal
+
+# Airflow runtime
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+standalone_admin_password.txt
+
+# PyCharm and VS Code settings
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+
+# Docker local overrides
+docker-compose.override.yml
+
+# Reports and test artifacts
+.coverage
+htmlcov/
